@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lumora</title>
+<title>Morning600</title>
 
 <style>
 *{
@@ -15,138 +16,88 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
-color:#fff;
+background:#f5f5f5;
+color:#333;
+line-height:1.8;
 }
 
 header{
-background:#111827;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+background:#0d6efd;
 position:sticky;
 top:0;
+z-index:1000;
+padding:15px;
 }
 
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#38bdf8;
+nav{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
 }
 
 nav a{
 color:#fff;
 text-decoration:none;
-margin:0 12px;
-}
-
-.hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-padding:20px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-max-width:700px;
-margin-bottom:30px;
-color:#cbd5e1;
-}
-
-.btn{
-background:#3b82f6;
-color:white;
-padding:15px 35px;
-border-radius:10px;
-text-decoration:none;
-font-size:18px;
+font-weight:bold;
 transition:.3s;
 }
 
-.btn:hover{
-background:#2563eb;
+nav a:hover{
+color:#ffd54f;
+}
+
+section{
+padding:80px 20px;
+min-height:100vh;
+}
+
+.hero{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:#ffffff;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:20px;
+color:#0d6efd;
+}
+
+.hero p{
+max-width:700px;
+font-size:20px;
+}
+
+.card{
+background:white;
+max-width:900px;
+margin:25px auto;
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,.08);
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-<div class="logo">🚀 Lumora</div>
-
 <nav>
-<a href="#">الرئيسية</a>
-<a href="#about">من نحن</a>
+<a href="#home">الرئيسية</a>
 <a href="#services">الخدمات</a>
-<a href="#contact">تواصل</a>
+<a href="#about">من نحن</a>
+<a href="#contact">تواصل معنا</a>
 </nav>
 </header>
 
-<section class="hero">
-<h1>مرحبًا بك في Lumora</h1>
-<p>نصنع مستقبلًا رقميًا بتصميمات احترافية وحلول تقنية حديثة.</p>
-
-<a class="btn" href="#about">ابدأ الآن</a>
+<section id="home" class="hero">
+<h1>Morning600</h1>
+<p>مرحباً بك في موقع Morning600، نقدم مقالات ومحتوى عربي مفيد في مجالات التقنية، الإنترنت، والربح من الإنترنت.</p>
 </section>
-<section id="about" style="padding:80px 20px;text-align:center;background:#111827;">
-<h2 style="font-size:40px;color:#38bdf8;margin-bottom:20px;">من نحن</h2>
-<p style="max-width:800px;margin:auto;font-size:20px;line-height:1.8;color:#d1d5db;">
-Lumora هو مشروع يهدف إلى تقديم مواقع ويب حديثة وسريعة بتصميم احترافي يعمل على جميع الأجهزة.
-</p>
-</section>
-
-<section id="services" style="padding:80px 20px;background:#0f172a;">
-<h2 style="text-align:center;font-size:40px;color:#38bdf8;margin-bottom:40px;">خدماتنا</h2>
-
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
-
-<div style="background:#1e293b;padding:25px;border-radius:15px;width:280px;text-align:center;">
-<h3>💻 تطوير المواقع</h3>
-<p>تصميم مواقع سريعة وحديثة ومتوافقة مع جميع الأجهزة.</p>
-</div>
-
-<div style="background:#1e293b;padding:25px;border-radius:15px;width:280px;text-align:center;">
-<h3>🎨 تصميم احترافي</h3>
-<p>واجهات جميلة وسهلة الاستخدام.</p>
-</div>
-
-<div style="background:#1e293b;padding:25px;border-radius:15px;width:280px;text-align:center;">
-<h3>⚡ أداء عالي</h3>
-<p>مواقع خفيفة وسريعة التحميل.</p>
-</div>
-
-</div>
-</section>
-<section id="contact" style="padding:80px 20px;text-align:center;background:#111827;">
-<h2 style="font-size:40px;color:#38bdf8;margin-bottom:20px;">تواصل معنا</h2>
-
-<p style="font-size:20px;color:#d1d5db;margin-bottom:25px;">
-يسعدنا التواصل معك في أي وقت.
-</p>
-
-<a href="mailto:contact@lumora.com"
-style="display:inline-block;padding:15px 35px;background:#3b82f6;color:#fff;text-decoration:none;border-radius:10px;">
-راسلنا
-</a>
-</section>
-
-<footer style="background:#0b1220;padding:25px;text-align:center;color:#94a3b8;">
-© 2026 Lumora. All Rights Reserved.
-</footer>
-
-</body>
-</html>
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5701584694025276"
      crossorigin="anonymous"></script>
